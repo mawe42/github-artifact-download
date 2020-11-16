@@ -48,32 +48,32 @@ All examples below assume that your GitHub token is set in the environment:
 export GITHUB_TOKEN=a345fd8e93...
 ```
 
-### Download latest artifact called "stuff" to a local file called stuff.zip
+**Download latest artifact called "stuff" to a local file called stuff.zip**
 ```
 github-artifact-download.py owner/repo --artifact stuff
 ```
 
-### Download latest artifact called "stuff" into a file called artifact.zip
+**Download latest artifact called "stuff" into a file called artifact.zip**
 ```
 github-artifact-download.py owner/repo --artifact stuff --filename artifact.zip
 ```
 
-### Download latest artifact called "stuff" and make sure we don't download it again
+**Download latest artifact called "stuff" and make sure we don't download it again**
 ```
 github-artifact-download.py owner/repo --artifact stuff --cache-file id.txt
 ```
 
-### Download the artifact "stuff" from the last successful build of workflow "My Test Build"
+**Download the artifact "stuff" from the last successful build of workflow "My Test Build"**
 ```
 github-artifact-download.py owner/repo --artifact stuff --workflow "My Test Build"
 ```
 
-### Download the artifact "stuff" from the last successful build of workflow "My Test Build", but only for builds on branch "test-build"
+**Download the artifact "stuff" from the last successful build of workflow "My Test Build", but only for builds on branch "test-build"**
 ```
 github-artifact-download.py owner/repo --artifact stuff --workflow "My Test Build" --branch test-build
 ```
 
-### Get help
+**Get help**
 ```
 github-artifact-download.py --help
 ```
