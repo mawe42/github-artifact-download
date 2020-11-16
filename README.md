@@ -16,7 +16,7 @@ Simply clone this repository and call the `github-artifact-download.py`
 ## Usage Guide
 
 GitHub currently restricts download of artifacts to authenticated users. That
-means that you need to create a Personal Access Token to use this tool. The
+means that you need to create a [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) to use this tool. The
 token can either be supplied via an environment variable `GITHUB_TOKEN`, or
 using the `--token` argument. For public repositories, only the "public_repo"
 scope is required for this access token.
